@@ -30,7 +30,7 @@ class AndroidCacheDataSourceFactory implements DataSource.Factory {
         this.context = context;
         this.maxCacheSize = maxCacheSize;
         this.maxFileSize = maxFileSize;
-        String userAgent = Util.getUserAgent(context,  context.getString(R.string.app_name));
+        String userAgent = Util.getUserAgent(context, "Seeconds");
         DefaultBandwidthMeter bandwidthMeter = new DefaultBandwidthMeter();
         defaultDatasourceFactory = new DefaultDataSourceFactory(this.context,
                 bandwidthMeter,
